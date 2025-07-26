@@ -19,7 +19,7 @@ const char* serverName = "http://localhost/Sensor/post-esp-data.php";
 
 // Keep this API Key value to be compatible with the PHP code provided in the project page. 
 // If you change the apiKeyValue value, the PHP file /post-esp-data.php also needs to have the same key 
-String apiKeyValue = "tPmAT5Ab3j7F9";
+String apiKeyValue = "your api key";
 String sensorName = "DHT11";
 String sensorLocation = "SERVER_ROOM";
 float readTemperature = 0;
