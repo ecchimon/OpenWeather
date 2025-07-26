@@ -3,6 +3,7 @@
 // English 
 
 Why? 
+
 This is a clone of OpenWeather (https://github.com/openweathermap) modified to use local temperature sensor in conjunction with data provided by the OpenWeather platform. 
 The original version uses LittleFS which I haven't found how to use in current development environments. 
 That's why I attached the files from the Data folder directly to the program source. 
@@ -14,6 +15,7 @@ This data can then be consulted, allowing the generation of reports. Notificatio
 // Português 
 
 Porque?
+
 Este é um clone do OpenWeather (https://github.com/openweathermap) modificado para usar sensor de temperatura local em conjunto com os dados fornecidos pela plataforma OpenWeather.
 A versão original utiliza e LittleFS que não encontrei como usar nos ambientes de desenvolvimento atuais. Por isso anexei os arquivos da pasta Data diretamente no fonte do programa.
 Esta baseado no microcontrolador esp32 do tipo CYD (cheap Yellow Device) com tela integrada, com o sensor de temperatura e pressão DHT11, mas pode ser usado outros sensores.
