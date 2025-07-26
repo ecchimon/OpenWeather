@@ -1,5 +1,7 @@
 # Raspberry Pico W, RP2040 Nano Connect, ESP8266 and ESP32 OpenWeather client
 
+// Disclaimer
+
 Este é um clone do OpenWeather (https://github.com/openweathermap) modificado para usar sensor de temperatura local em conjunto com os dados fornecidos pela plataforma OpenWeather.
 A versão original utiliza e LittleFS que não encontrei como usar nos ambientes de desenvolvimento atuais. Por isso anexei os arquivos da pasta Data diretamente no fonte do programa.
 Esta baseado no microcontrolador esp32 do tipo CYD (cheap Yellow Device) com tela integrada, com o sensor de temperatura e pressão DHT11, mas pode ser usado outros sensores.
@@ -8,6 +10,9 @@ Para isso, os dados dos sensores são lidos e enviados em uma determinada freque
 Estes dados podem então serem consultados, permitindo a geração de relatórios.
 Ainda foi implementado notificação através do envio de e-mail se pressão ou temperatura fiquem acima ou abaixo dos limites pré-estabelecidos
 
+//-------------------------------------------------------------------------------------------------
+
+// Original README.md -----------------------------------------------------------------------------
 
 Arduino client library for https://openweathermap.org/
 
