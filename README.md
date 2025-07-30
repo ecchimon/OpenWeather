@@ -1,5 +1,21 @@
 # Raspberry Pico W, RP2040 Nano Connect, ESP8266 and ESP32 OpenWeather client
 
+// English 
+
+Why? 
+
+This is a clone of OpenWeather (https://github.com/openweathermap) modified to use local temperature sensor in conjunction with data provided by the OpenWeather platform. 
+The original version uses LittleFS which I haven't found how to use in current development environments. 
+That's why I attached the files from the Data folder directly to the program source. 
+It is based on the CYD (cheap Yellow Device) esp32 microcontroller with integrated screen, with the DHT11 temperature and pressure sensor, but other sensors can be used. 
+The reason for this adaptation is not only to display the sensor data, but to record it in a database. 
+To do this, data from the sensors are read and sent at a certain frequency (1 hour at first) to a web server, through an API written in PHP that will feed a database. 
+This data can then be consulted, allowing the generation of reports. Notification was also implemented by sending an email if pressure or temperature were above or below pre-established limits
+
+// Português 
+
+Porque?
+
 Este é um clone do OpenWeather (https://github.com/openweathermap) modificado para usar sensor de temperatura local em conjunto com os dados fornecidos pela plataforma OpenWeather.
 A versão original utiliza e LittleFS que não encontrei como usar nos ambientes de desenvolvimento atuais. Por isso anexei os arquivos da pasta Data diretamente no fonte do programa.
 Esta baseado no microcontrolador esp32 do tipo CYD (cheap Yellow Device) com tela integrada, com o sensor de temperatura e pressão DHT11, mas pode ser usado outros sensores.
@@ -8,6 +24,9 @@ Para isso, os dados dos sensores são lidos e enviados em uma determinada freque
 Estes dados podem então serem consultados, permitindo a geração de relatórios.
 Ainda foi implementado notificação através do envio de e-mail se pressão ou temperatura fiquem acima ou abaixo dos limites pré-estabelecidos
 
+//-------------------------------------------------------------------------------------------------
+
+// Original README.md -----------------------------------------------------------------------------
 
 Arduino client library for https://openweathermap.org/
 
